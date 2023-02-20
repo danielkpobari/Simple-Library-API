@@ -18,9 +18,9 @@ public class FavoriteRequest {
     private Long bookId;
 
 
-    @NotBlank(message = "email cannot be empty")
-    @Email(message = "Email should be valid")
-    @ApiModelProperty(notes = "User's Email")
-    private String email;
+    @NotNull(message = "id cannot be null")
+    @ApiModelProperty(notes = "User's Id")
+    @Min(value = 1, message = " User ID cannot be less than 1")
+    private Long userId;
 
 }
