@@ -33,7 +33,7 @@ public class SwaggerConfiguration implements WebMvcConfigurer {
                 .securitySchemes(List.of(apiKey()))
                 .useDefaultResponseMessages(false)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.codeKonnects.libraryapi"))
+                .apis(RequestHandlerSelectors.basePackage("com.daniel_wizer.libraryapi"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -70,7 +70,7 @@ public class SwaggerConfiguration implements WebMvcConfigurer {
                     "API for A Simple Library",
                     "1.0",
                     "Free to use",
-                    new springfox.documentation.service.Contact("David", "", "topedaves@gmail.com"),
+                    new springfox.documentation.service.Contact("Daniel", "", "danielkpobari@gmail.com"),
                     "API License",
                     "",
                     Collections.emptyList()
